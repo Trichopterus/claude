@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Archivo:wght@400;500;600;700&display=swap">
+  <style>
+    :root{
+      --vinyl:#1B1613;
+      --creme:#F7F2E6;
+      --creme-2:#EFE6D2;
+      --gold:#C9762F;
+      --red:#9B3826;
+      --teal:#2E6B66;
+      --line:#DED2B4;
+      --ink-soft:#5B5049;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;}
+    a{color:var(--gold);text-decoration:none;}
+    a:hover{color:var(--red);}
+    .btn-primary{background:var(--vinyl);color:var(--creme);font-weight:600;font-size:15px;padding:14px 28px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;}
+    .btn-ghost{border:1.5px solid var(--vinyl);color:var(--vinyl);font-weight:600;font-size:15px;padding:12.5px 26px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;}
+    .eyebrow{font-weight:700;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);}
+    .h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:36px;letter-spacing:-0.01em;color:var(--vinyl);}
+  </style>
+</helmet>
+
+<div style="width:1440px;background:var(--creme);font-family:'Archivo',sans-serif;color:var(--vinyl);display:flex;flex-direction:column;">
+
+  <!-- Header -->
+  <div style="position:sticky;top:0;height:84px;padding:0 64px;display:flex;align-items:center;justify-content:space-between;background:rgba(247,242,230,0.96);border-bottom:1px solid var(--line);">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <svg width="38" height="38" viewBox="0 0 120 120" fill="none">
+        <circle cx="60" cy="60" r="52" stroke="#1B1613" stroke-width="3"/>
+        <circle cx="60" cy="60" r="24" fill="#C9762F"/>
+        <circle cx="60" cy="60" r="4" fill="#1B1613"/>
+        <line x1="98" y1="22" x2="70" y2="50" stroke="#1B1613" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="98" cy="22" r="6" fill="#1B1613"/>
+      </svg>
+      <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:21px;">Toni's Records</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:40px;font-weight:600;font-size:15px;">
+      <a href="#">Shop</a>
+      <a href="#">Neuheiten</a>
+      <a href="#">Second Hand / Ankauf</a>
+      <a href="#">Events</a>
+      <a href="#">Über uns</a>
+      <a href="#">Kontakt</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1613" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1613" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1613" stroke-width="1.8"><circle cx="9" cy="21" r="1.4" fill="#1B1613"/><circle cx="19" cy="21" r="1.4" fill="#1B1613"/><path d="M2 3h3l2.6 13.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;min-height:600px;">
+    <div style="display:flex;flex-direction:column;justify-content:center;gap:22px;padding:0 64px;">
+      <div class="eyebrow">Seit [Jahr] in [Stadt]</div>
+      <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:58px;line-height:1.06;letter-spacing:-0.01em;">Musik zum<br>Anfassen.</div>
+      <div style="font-size:18px;line-height:1.6;color:var(--ink-soft);max-width:440px;">Zehntausende Platten, kuratiert von Menschen, die Musik lieben. Neu, gebraucht, selten — komm vorbei oder stöber online.</div>
+      <div style="display:flex;gap:16px;margin-top:8px;">
+        <div class="btn-primary">Jetzt stöbern
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F7F2E6" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+        <div class="btn-ghost">Unsere Geschichte</div>
+      </div>
+    </div>
+    <div style="background:radial-gradient(circle at 65% 40%, #E9975A, #9B3826 70%, #4A1B12 100%);position:relative;display:flex;align-items:center;justify-content:center;">
+      <svg width="260" height="260" viewBox="0 0 260 260" fill="none" opacity="0.9">
+        <circle cx="130" cy="130" r="118" stroke="#F7F2E6" stroke-width="1.5"/>
+        <circle cx="130" cy="130" r="92" stroke="#F7F2E6" stroke-width="1"/>
+        <circle cx="130" cy="130" r="66" stroke="#F7F2E6" stroke-width="1"/>
+        <circle cx="130" cy="130" r="36" fill="#1B1613"/>
+        <circle cx="130" cy="130" r="6" fill="#F7F2E6"/>
+      </svg>
+      <div style="position:absolute;bottom:28px;left:28px;font-size:12px;letter-spacing:0.14em;color:#F7F2E6;opacity:0.8;text-transform:uppercase;">Foto-Platzhalter — Ladenlicht, warme Krate</div>
+    </div>
+  </div>
+
+  <!-- Genre-Kacheln -->
+  <div style="padding:88px 64px;display:flex;flex-direction:column;gap:32px;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;">
+      <div class="h2">Nach Genre stöbern</div>
+      <a href="#" style="font-weight:600;font-size:15px;">Alle Genres →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6, minmax(0, 1fr));gap:16px;">
+      <div style="height:140px;border-radius:10px;background:var(--vinyl);color:var(--creme);display:flex;align-items:flex-end;padding:18px;font-weight:700;font-size:17px;">Rock</div>
+      <div style="height:140px;border-radius:10px;background:var(--gold);color:var(--vinyl);display:flex;align-items:flex-end;padding:18px;font-weight:700;font-size:17px;">Jazz</div>
+      <div style="height:140px;border-radius:10px;background:var(--red);color:var(--creme);display:flex;align-items:flex-end;padding:18px;font-weight:700;font-size:17px;">Soul</div>
+      <div style="height:140px;border-radius:10px;background:var(--teal);color:var(--creme);display:flex;align-items:flex-end;padding:18px;font-weight:700;font-size:17px;">Electronic</div>
+      <div style="height:140px;border-radius:10px;background:#8A6A3E;color:var(--creme);display:flex;align-items:flex-end;padding:18px;font-weight:700;font-size:17px;">Hip-Hop</div>
+      <div style="height:140px;border-radius:10px;background:var(--creme-2);border:1px solid var(--line);color:var(--vinyl);display:flex;align-items:flex-end;padding:18px;font-weight:700;font-size:17px;">Klassik</div>
+    </div>
+  </div>
+
+  <!-- Frisch reingekommen -->
+  <div style="padding:0 64px 88px;display:flex;flex-direction:column;gap:32px;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;">
+      <div class="h2">Frisch reingekommen</div>
+      <a href="#" style="font-weight:600;font-size:15px;">Alle Neuheiten →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(5, minmax(0, 1fr));gap:20px;">
+
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="aspect-ratio:1;border-radius:8px;background:linear-gradient(135deg,#C9762F,#6E4A22);"></div>
+        <div style="font-weight:600;font-size:15px;">Albumtitel</div>
+        <div style="font-size:13px;color:var(--ink-soft);">Künstler:in</div>
+        <div style="font-weight:700;font-size:14px;">24,90 €</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="aspect-ratio:1;border-radius:8px;background:linear-gradient(135deg,#2E6B66,#14302D);"></div>
+        <div style="font-weight:600;font-size:15px;">Albumtitel</div>
+        <div style="font-size:13px;color:var(--ink-soft);">Künstler:in</div>
+        <div style="font-weight:700;font-size:14px;">27,90 €</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="aspect-ratio:1;border-radius:8px;background:linear-gradient(135deg,#9B3826,#4A1B12);"></div>
+        <div style="font-weight:600;font-size:15px;">Albumtitel</div>
+        <div style="font-size:13px;color:var(--ink-soft);">Künstler:in</div>
+        <div style="font-weight:700;font-size:14px;">19,90 €</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="aspect-ratio:1;border-radius:8px;background:linear-gradient(135deg,#8A6A3E,#3A2C18);"></div>
+        <div style="font-weight:600;font-size:15px;">Albumtitel</div>
+        <div style="font-size:13px;color:var(--ink-soft);">Künstler:in</div>
+        <div style="font-weight:700;font-size:14px;">22,90 €</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="aspect-ratio:1;border-radius:8px;background:linear-gradient(135deg,#1B1613,#3A322A);"></div>
+        <div style="font-weight:600;font-size:15px;">Albumtitel</div>
+        <div style="font-size:13px;color:var(--ink-soft);">Künstler:in</div>
+        <div style="font-weight:700;font-size:14px;">29,90 €</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Story-Teaser -->
+  <div style="background:var(--vinyl);color:var(--creme);display:grid;grid-template-columns:1fr 1fr;min-height:480px;">
+    <div style="background:linear-gradient(160deg,#4A3B2A,#1B1613 85%);"></div>
+    <div style="display:flex;flex-direction:column;justify-content:center;gap:20px;padding:64px;">
+      <div class="eyebrow" style="color:var(--gold);">Unsere Geschichte</div>
+      <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:34px;line-height:1.15;">Aus Leidenschaft gewachsen, nicht aus einem Businessplan.</div>
+      <div style="font-size:16px;line-height:1.65;color:#D8CFC0;max-width:460px;">[Platzhalter: kurzer, persönlicher Auszug aus Tonis eigener Geschichte — wie alles begann, was den Laden bis heute trägt.]</div>
+      <a href="#" style="font-weight:600;font-size:15px;color:var(--creme);display:inline-flex;align-items:center;gap:8px;">Mehr erfahren
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F7F2E6" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Toni's Pick der Woche -->
+  <div style="padding:88px 64px;display:flex;flex-direction:column;gap:32px;">
+    <div class="h2">Toni's Pick der Woche</div>
+    <div style="display:grid;grid-template-columns:420px 1fr;gap:48px;background:var(--creme-2);border:1px solid var(--line);border-radius:16px;padding:40px;align-items:center;">
+      <div style="aspect-ratio:1;border-radius:10px;background:linear-gradient(135deg,#C9762F,#9B3826);"></div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="eyebrow">Kuratiert von Toni</div>
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;">Albumtitel — Künstler:in</div>
+        <div style="font-size:16px;line-height:1.6;color:var(--ink-soft);max-width:520px;">[Platzhalter: persönliche Empfehlung, 2–3 Sätze — warum diese Platte diese Woche läuft.]</div>
+        <div style="display:flex;gap:16px;align-items:center;margin-top:8px;">
+          <div class="btn-primary">In den Warenkorb</div>
+          <div style="font-weight:700;font-size:18px;">26,90 €</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second-Hand / Ankauf Banner -->
+  <div style="margin:0 64px 88px;background:var(--red);color:var(--creme);border-radius:16px;padding:56px 64px;display:flex;align-items:center;justify-content:space-between;gap:32px;">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:640px;">
+      <div class="h2" style="color:var(--creme);">Deine Sammlung verdient ein neues Zuhause?</div>
+      <div style="font-size:16px;line-height:1.6;color:#F1D9CC;">Wir kaufen Plattensammlungen fair und unkompliziert an — von Einzelstücken bis zum ganzen Regal.</div>
+    </div>
+    <div style="background:var(--creme);color:var(--red);font-weight:700;font-size:15px;padding:16px 32px;border-radius:999px;white-space:nowrap;">Platten verkaufen</div>
+  </div>
+
+  <!-- Events -->
+  <div style="padding:0 64px 88px;display:flex;flex-direction:column;gap:32px;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;">
+      <div class="h2">Was bei uns läuft</div>
+      <a href="#" style="font-weight:600;font-size:15px;">Alle Events →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:20px;">
+      <div style="border:1px solid var(--line);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:10px;">
+        <div class="eyebrow">In-Store · [Datum]</div>
+        <div style="font-weight:700;font-size:19px;">DJ-Set: Soul &amp; Funk Digging</div>
+        <div style="font-size:14px;color:var(--ink-soft);line-height:1.5;">[Platzhalter-Beschreibung]</div>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:10px;">
+        <div class="eyebrow">Record Store Day</div>
+        <div style="font-weight:700;font-size:19px;">Limitierte Editionen &amp; Live-Musik</div>
+        <div style="font-size:14px;color:var(--ink-soft);line-height:1.5;">[Platzhalter-Beschreibung]</div>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:10px;">
+        <div class="eyebrow">Workshop</div>
+        <div style="font-weight:700;font-size:19px;">Plattenspieler-Pflege leicht gemacht</div>
+        <div style="font-size:14px;color:var(--ink-soft);line-height:1.5;">[Platzhalter-Beschreibung]</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div style="margin:0 64px 88px;background:var(--creme-2);border:1px solid var(--line);border-radius:16px;padding:56px 64px;display:flex;align-items:center;justify-content:space-between;gap:32px;">
+    <div style="display:flex;flex-direction:column;gap:8px;max-width:440px;">
+      <div class="h2">Nichts mehr verpassen</div>
+      <div style="font-size:15px;color:var(--ink-soft);">Neuheiten, Ankäufe und Events — einmal im Monat, kein Spam.</div>
+    </div>
+    <div style="display:flex;gap:12px;">
+      <div style="width:320px;height:52px;border-radius:999px;border:1.5px solid var(--vinyl);background:var(--creme);"></div>
+      <div class="btn-primary">Anmelden</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="background:var(--vinyl);color:var(--creme);padding:64px 64px 32px;display:flex;flex-direction:column;gap:48px;">
+    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:32px;">
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;">Toni's Records</div>
+        <div style="font-size:14px;line-height:1.6;color:#C8BDA9;max-width:260px;">Schallplatten seit [Jahr] — neu, gebraucht, immer mit Leidenschaft ausgesucht.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;font-size:14px;">
+        <div style="font-weight:700;margin-bottom:4px;">Shop</div>
+        <div>Neuheiten</div><div>Second Hand</div><div>Genres</div><div>Sale</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;font-size:14px;">
+        <div style="font-weight:700;margin-bottom:4px;">Service</div>
+        <div>Ankauf</div><div>Versand</div><div>Kontakt</div><div>FAQ</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;font-size:14px;">
+        <div style="font-weight:700;margin-bottom:4px;">Über uns</div>
+        <div>Geschichte</div><div>Events</div><div>Team</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;font-size:14px;">
+        <div style="font-weight:700;margin-bottom:4px;">Social</div>
+        <div>Instagram</div><div>Facebook</div>
+      </div>
+    </div>
+    <div style="height:1px;background:#3A322A;"></div>
+    <div style="display:flex;justify-content:space-between;font-size:13px;color:#9C8F79;">
+      <div>© [Jahr] Toni's Records</div>
+      <div style="display:flex;gap:24px;"><div>Impressum</div><div>Datenschutz</div><div>AGB</div></div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

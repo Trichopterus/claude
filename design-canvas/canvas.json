@@ -1,0 +1,11 @@
+{
+  "artboards": [
+    { "file": "Moodboard.dc.html", "x": 0, "y": 0, "w": 1440, "h": 1900, "title": "Moodboard" },
+    { "file": "Main.dc.html", "x": 1600, "y": 0, "w": 1440, "h": 4550, "title": "Startseite — Desktop" },
+    { "file": "Mobile.dc.html", "x": 3200, "y": 0, "w": 390, "h": 4300, "title": "Startseite — Mobile" }
+  ],
+  "annotations": [
+    { "id": "brief-summary", "x": 0, "y": -160, "w": 480, "text": "Toni's Records — Relaunch-Konzept\nRetro-Charme trifft modernes Webdesign. Farben, Typografie und Bildsprache links, Startseite Desktop und Mobile rechts." }
+  ],
+  "launch": { "view": "canvas" }
+}

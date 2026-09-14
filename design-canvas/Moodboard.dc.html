@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Archivo:wght@400;500;600;700&display=swap">
+  <style>
+    :root{
+      --vinyl:#1B1613;
+      --creme:#F3ECDC;
+      --creme-2:#EAE0C9;
+      --gold:#C9762F;
+      --red:#9B3826;
+      --teal:#2E6B66;
+      --line:#DCD0B4;
+      --ink-soft:#5B5049;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;}
+    a{color:var(--gold);}
+    a:hover{color:var(--red);}
+  </style>
+</helmet>
+
+<div style="width:1440px;background:var(--creme);font-family:'Archivo',sans-serif;color:var(--vinyl);padding:72px 96px 96px;display:flex;flex-direction:column;gap:64px;">
+
+  <!-- Kopf -->
+  <div style="display:flex;flex-direction:column;gap:14px;max-width:920px;">
+    <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);">Marken- &amp; Stilkonzept</div>
+    <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:52px;line-height:1.08;letter-spacing:-0.01em;">Bewahre die Seele von Toni's Records. Modernisiere das Erscheinungsbild.</div>
+  </div>
+
+  <!-- Farbpalette -->
+  <div style="display:flex;flex-direction:column;gap:24px;">
+    <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px;">Farbpalette</div>
+    <div style="display:grid;grid-template-columns:repeat(5, minmax(0, 1fr));gap:20px;">
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="height:150px;border-radius:8px;background:var(--vinyl);"></div>
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <div style="font-weight:600;font-size:15px;">Vinyl-Schwarz</div>
+          <div style="font-size:13px;color:var(--ink-soft);">#1B1613 · Basis dunkel, Text</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="height:150px;border-radius:8px;background:var(--creme-2);border:1px solid var(--line);"></div>
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <div style="font-weight:600;font-size:15px;">Analog-Creme</div>
+          <div style="font-size:13px;color:var(--ink-soft);">#F3ECDC · Basis hell, Papierton</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="height:150px;border-radius:8px;background:var(--gold);"></div>
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <div style="font-weight:600;font-size:15px;">Label-Gold</div>
+          <div style="font-size:13px;color:var(--ink-soft);">#C9762F · Primärakzent, CTAs</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="height:150px;border-radius:8px;background:var(--red);"></div>
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <div style="font-weight:600;font-size:15px;">Sleeve-Rot</div>
+          <div style="font-size:13px;color:var(--ink-soft);">#9B3826 · Sale, Betonung</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="height:150px;border-radius:8px;background:var(--teal);"></div>
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <div style="font-weight:600;font-size:15px;">Retro-Teal</div>
+          <div style="font-size:13px;color:var(--ink-soft);">#2E6B66 · Sekundär, sparsam</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Typografie -->
+  <div style="display:flex;flex-direction:column;gap:24px;">
+    <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px;">Typografie</div>
+    <div style="display:flex;flex-direction:column;gap:28px;background:var(--creme-2);border:1px solid var(--line);border-radius:12px;padding:40px;">
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-soft);">Headlines — Bricolage Grotesque, Bold/Extrabold</div>
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:86px;line-height:1;letter-spacing:-0.01em;">Toni's Records</div>
+      </div>
+      <div style="height:1px;background:var(--line);"></div>
+      <div style="display:flex;flex-direction:column;gap:6px;max-width:760px;">
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-soft);">Fließtext — Archivo, Regular/Medium</div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:400;font-size:19px;line-height:1.6;">Seit Generationen ein Ort zum Stöbern, Hören und Entdecken. Jede Rille erzählt eine Geschichte — wir sorgen dafür, dass man sie auch online spürt.</div>
+        <div style="display:flex;gap:28px;margin-top:10px;">
+          <div style="font-family:'Archivo',sans-serif;font-weight:400;font-size:15px;color:var(--ink-soft);">Regular 400</div>
+          <div style="font-family:'Archivo',sans-serif;font-weight:500;font-size:15px;color:var(--ink-soft);">Medium 500</div>
+          <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:var(--ink-soft);">Bold 700</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bildsprache -->
+  <div style="display:flex;flex-direction:column;gap:24px;">
+    <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px;">Bildsprache <span style="font-family:'Archivo',sans-serif;font-weight:400;font-size:15px;color:var(--ink-soft);">— Platzhalter, echte Fotografie folgt</span></div>
+    <div style="display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:20px;">
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="height:200px;border-radius:8px;background:radial-gradient(circle at 30% 30%, #E9975A, #9B3826 75%);display:flex;align-items:center;justify-content:center;">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="24" stroke="#F3ECDC" stroke-width="1.5"/><circle cx="28" cy="28" r="16" stroke="#F3ECDC" stroke-width="1.5"/><circle cx="28" cy="28" r="8" stroke="#F3ECDC" stroke-width="1.5"/><circle cx="28" cy="28" r="2.5" fill="#F3ECDC"/></svg>
+        </div>
+        <div style="font-weight:600;font-size:14px;">Rillen-Makro</div>
+        <div style="font-size:13px;color:var(--ink-soft);line-height:1.5;">Nahaufnahme der Vinyl-Rille im Streiflicht, warmer Kontrast</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="height:200px;border-radius:8px;background:linear-gradient(135deg, #C9762F, #6E4A22 80%);display:flex;align-items:center;justify-content:center;">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><rect x="6" y="30" width="44" height="14" rx="2" stroke="#F3ECDC" stroke-width="1.5"/><rect x="10" y="16" width="36" height="14" rx="2" stroke="#F3ECDC" stroke-width="1.5" opacity="0.7"/></svg>
+        </div>
+        <div style="font-weight:600;font-size:14px;">Krate-Wühlen</div>
+        <div style="font-size:13px;color:var(--ink-soft);line-height:1.5;">Hände beim Durchblättern von Plattenkisten, Bewegung &amp; Haptik</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="height:200px;border-radius:8px;background:linear-gradient(160deg, #4A3B2A, #1B1613 85%);display:flex;align-items:center;justify-content:center;">
+          <svg width="48" height="56" viewBox="0 0 48 56" fill="none"><circle cx="24" cy="18" r="12" stroke="#F3ECDC" stroke-width="1.5"/><path d="M4 54c0-13 9-22 20-22s20 9 20 22" stroke="#F3ECDC" stroke-width="1.5"/></svg>
+        </div>
+        <div style="font-weight:600;font-size:14px;">Ladenporträt</div>
+        <div style="font-size:13px;color:var(--ink-soft);line-height:1.5;">Toni im Laden, natürliches Licht, ehrlich statt gestellt</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="height:200px;border-radius:8px;background:radial-gradient(circle at 50% 50%, #2E6B66, #14302D 80%);display:flex;align-items:center;justify-content:center;">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="22" stroke="#F3ECDC" stroke-width="1.5"/><circle cx="28" cy="28" r="3" fill="#F3ECDC"/><path d="M28 6v6M28 44v6M6 28h6M44 28h6" stroke="#F3ECDC" stroke-width="1.5"/></svg>
+        </div>
+        <div style="font-weight:600;font-size:14px;">Vinyl-Label-Detail</div>
+        <div style="font-size:13px;color:var(--ink-soft);line-height:1.5;">Nahaufnahme bedruckter Labels, Typografie &amp; Farbigkeit</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Logo-Interpretation -->
+  <div style="display:flex;flex-direction:column;gap:24px;">
+    <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px;">Logo-Interpretation</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+
+      <div style="background:var(--vinyl);border-radius:12px;padding:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="52" stroke="#F3ECDC" stroke-width="2"/>
+          <circle cx="60" cy="60" r="38" stroke="#F3ECDC" stroke-width="1"/>
+          <circle cx="60" cy="60" r="24" fill="#C9762F"/>
+          <circle cx="60" cy="60" r="4" fill="#1B1613"/>
+          <line x1="98" y1="22" x2="70" y2="50" stroke="#F3ECDC" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="98" cy="22" r="6" fill="#F3ECDC"/>
+        </svg>
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:var(--creme);letter-spacing:0.02em;">TONI'S RECORDS</div>
+        <div style="font-size:12px;letter-spacing:0.2em;color:var(--gold);font-weight:600;">SCHALLPLATTEN SEIT [JAHR]</div>
+      </div>
+
+      <div style="background:var(--creme-2);border:1px solid var(--line);border-radius:12px;padding:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:44px;letter-spacing:-0.01em;">Toni's <span style="color:var(--gold);">Records</span></div>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--vinyl);display:flex;align-items:center;justify-content:center;">
+            <div style="width:10px;height:10px;border-radius:50%;background:var(--gold);"></div>
+          </div>
+          <div style="font-size:13px;letter-spacing:0.18em;color:var(--ink-soft);font-weight:600;">MONOGRAMM ALS FAVICON / APP-ICON</div>
+        </div>
+      </div>
+
+    </div>
+    <div style="font-size:14px;line-height:1.6;color:var(--ink-soft);max-width:820px;">Das bestehende Emblem — Tonarm, Rille, Label — bleibt als Kernmotiv erhalten, wird aber reduziert und linienbasiert neu gezeichnet: skaliert vom Favicon bis zum Ladenschild, druckt sauber in einer Farbe, funktioniert hell wie dunkel.</div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
