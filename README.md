@@ -7,3 +7,9 @@ Dieses Repository enthält das Relaunch-Konzept für `www.tonis-records.de`.
 - `design-canvas/` — Quelldateien des Design-Canvas (Moodboard, Desktop- und Mobile-Wireframe).
 
 **Leitmotiv:** *„Bewahre die Seele von Toni's Records. Modernisiere das Erscheinungsbild."*
+
+---
+
+## Ann's Fußpflege — Gutschein DIN A6
+
+`gutschein-anns/` enthält einen druckfertigen Geschenkgutschein (Vorder- und Rückseite) für Vistaprint Gutscheinkarten A6 — siehe [gutschein-anns/README.md](gutschein-anns/README.md).
