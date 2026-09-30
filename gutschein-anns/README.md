@@ -31,3 +31,9 @@ NODE_PATH=$(npm root -g) node render.cjs
 `extract_assets.py` stellt Logo, Schleife und Fußpaar aus der ursprünglichen Entwurfsgrafik frei
 (`python3 extract_assets.py <entwurf.webp>`, benötigt Pillow + NumPy).
 Der QR-Code (`assets/qr-terminbuchung.svg`) führt auf https://www.anns-fusspflege.de.
+
+## Zu Hause drucken (`druckdaten/gutschein-a4-zum-selbstdrucken.pdf`)
+
+2 Gutscheine pro A4-Bogen mit Schnittmarken; Seite 1 = Vorderseiten, Seite 2 = Rückseiten.
+Drucken mit **„Tatsächliche Größe / 100 %“**, **beidseitig, an der langen Kante spiegeln**,
+möglichst auf festem Papier (ab ca. 200 g/m²). Neu erzeugen: `python3 a4_bogen.py`.
