@@ -31,7 +31,7 @@ NODE_PATH=$(npm root -g) node render.cjs
 
 `extract_assets.py` stellt Logo, Schleife und Fußpaar aus der ursprünglichen Entwurfsgrafik frei
 (`python3 extract_assets.py <entwurf.webp>`, benötigt Pillow + NumPy).
-Der QR-Code (`assets/qr-terminbuchung.svg`) führt auf https://www.anns-fusspflege.de.
+Der QR-Code (`assets/qr-terminbuchung.svg`) führt auf https://anns-fusspflege.computer-abc.info/.
 
 ## Zu Hause drucken (`druckdaten/gutschein-a4-zum-selbstdrucken.pdf`)
 
