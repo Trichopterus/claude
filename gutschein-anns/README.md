@@ -38,3 +38,14 @@ Der QR-Code (`assets/qr-terminbuchung.svg`) führt auf https://www.anns-fusspfle
 2 Gutscheine pro A4-Bogen mit Schnittmarken; Seite 1 = Vorderseiten, Seite 2 = Rückseiten.
 Drucken mit **„Tatsächliche Größe / 100 %“**, **beidseitig, an der langen Kante spiegeln**,
 möglichst auf festem Papier (ab ca. 200 g/m²). Neu erzeugen: `python3 a4_bogen.py`.
+
+## Günstige Variante: Visitenkartenformat (`gutschein-visitenkarte.html`)
+
+Kompakter Gutschein für **Vistaprint Visitenkarten (Standard, quer)** – deutlich günstiger als Postkarten.
+Datenformat 88 × 58 mm inkl. 1,5 mm Beschnitt, Endformat 85 × 55 mm; Rückseite mit Feldern „Ausgestellt am“ und „Nr.“.
+
+- `druckdaten/visitenkarte-vorderseite.pdf`, `druckdaten/visitenkarte-rueckseite.pdf` – zum Hochladen (je eine Seite)
+- `druckdaten/visitenkarte-gutschein.pdf` – beide Seiten in einer Datei
+- `druckdaten/visitenkarte-*.png` – 600 dpi, Alternative zum Upload
+
+Neu erzeugen: `NODE_PATH=$(npm root -g) node render-visitenkarte.cjs`

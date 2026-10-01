@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Ann's Fußpflege – Gutschein Visitenkartenformat</title>
+<!--
+  Druckdatei für Vistaprint Visitenkarten (Standard, quer)
+  Datenformat inkl. Beschnitt: 88 × 58 mm (1,5 mm Beschnitt je Seite)
+  Endformat (Schnittlinie):   85 × 55 mm
+  Alle Inhalte liegen ≥ 2,5 mm innerhalb der Schnittlinie.
+-->
+<style>
+  @font-face { font-family: 'Source Sans 3'; font-weight: 200 900; src: url(assets/fonts/SourceSans3.woff2) format('woff2'); }
+  @font-face { font-family: 'PT Sans Narrow'; font-weight: 400; src: url(assets/fonts/PTSansNarrow-Regular.woff2) format('woff2'); }
+  @font-face { font-family: 'PT Sans Narrow'; font-weight: 700; src: url(assets/fonts/PTSansNarrow-Bold.woff2) format('woff2'); }
+  @font-face { font-family: 'Satisfy'; src: url(assets/fonts/Satisfy.woff2) format('woff2'); }
+  @font-face { font-family: 'Yellowtail'; src: url(assets/fonts/Yellowtail.woff2) format('woff2'); }
+  :root { --lila: #7A0F6E; --lila-dunkel: #5E0C51; --gold: #FCC21E; --flieder: #F3E6F1; }
+  @page { size: 88mm 58mm; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Source Sans 3', sans-serif; color: var(--lila-dunkel);
+         -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 88mm; height: 58mm; position: relative; overflow: hidden; background: #fff; break-after: page; }
+  .page:last-child { break-after: auto; }
+  .frame { position: absolute; inset: 4mm; border: .45mm solid var(--lila); border-radius: 2.4mm; }
+  .frame::after { content: ""; position: absolute; inset: .55mm; border: .3mm solid var(--gold); border-radius: 1.9mm; }
+  .abs { position: absolute; }
+  .script { font-family: 'Satisfy', cursive; line-height: 1.2; }
+
+  /* Vorderseite */
+  .front .logo { left: 5.5mm; top: 5.5mm; width: 22mm; }
+  .front .bow { right: 1.5mm; top: 1.5mm; width: 19mm; }
+  .front .head { left: 27mm; top: 6.4mm; width: 40mm; text-align: center; font-weight: 700; font-size: 7.4pt; line-height: 1.1; }
+  .front .head small { display: block; font-weight: 400; font-size: 5.6pt; color: var(--lila); margin-top: .4mm; }
+  .front .title { left: 22mm; top: 19.5mm; font-family: 'Yellowtail', cursive; font-size: 29pt; color: var(--lila);
+                  line-height: 1; transform: rotate(-3deg); }
+  .front .badge { right: 5.6mm; top: 21.5mm; width: 21mm; height: 21mm; }
+  .front .badge .txt { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+                       justify-content: center; color: #fff; }
+  .front .badge .von { font-size: 5.4pt; }
+  .front .badge .wert { font-size: 13.5pt; font-weight: 700; line-height: 1; margin-top: .3mm; }
+  .front .claim { left: 7mm; bottom: 7.2mm; font-size: 8pt; transform: rotate(-6deg); transform-origin: left bottom; }
+  .front .claim svg { vertical-align: -.4mm; }
+
+  /* Rückseite */
+  .back .hints { left: 7mm; top: 6.6mm; width: 47mm; }
+  .back .hints h3 { font-size: 7.4pt; font-weight: 700; margin-bottom: .9mm; }
+  .back .hints ul { list-style: none; font-family: 'PT Sans Narrow', sans-serif; font-size: 6.4pt; line-height: 1.12; }
+  .back .hints li { display: flex; gap: 1mm; margin-bottom: .45mm; }
+  .back .hints li::before { content: ""; flex: none; width: 1.3mm; height: 1.3mm; border-radius: 50%;
+                            background: var(--gold); margin-top: .5mm; }
+  .back .qrwrap { right: 6.8mm; top: 7mm; width: 19mm; text-align: center; }
+  .back .qr { width: 15mm; height: 15mm; margin: 0 auto; border: .35mm solid var(--lila); border-radius: 1.2mm; padding: .9mm; }
+  .back .qr img { width: 100%; display: block; }
+  .back .qrcap { font-size: 5pt; line-height: 1.15; margin-top: .6mm; }
+  .back .fields { left: 7mm; right: 7mm; bottom: 15.6mm; display: flex; gap: 3mm; font-size: 6pt; }
+  .back .fields div { display: flex; align-items: flex-end; gap: 1mm; }
+  .back .fields div:first-child { flex: 1.4; } .back .fields div:last-child { flex: 1; }
+  .back .fields span { flex: 1; border-bottom: .2mm solid var(--lila-dunkel); height: 3.6mm; }
+  .back .rule { left: 7mm; right: 7mm; bottom: 13.4mm; height: .25mm; background: var(--gold); }
+  .back .contacts { left: 7mm; right: 7mm; bottom: 7.4mm; display: flex; justify-content: space-between; align-items: center;
+                    font-size: 6.3pt; white-space: nowrap; }
+  .back .contacts .item { display: flex; align-items: center; gap: .9mm; }
+  .back .contacts .icon { width: 3.6mm; height: 3.6mm; border-radius: 50%; background: var(--lila); display: grid; place-items: center; }
+  .back .contacts .icon svg { width: 2.1mm; height: 2.1mm; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="heart" viewBox="0 0 24 22">
+      <path d="M12 20.5 3.3 12.2A5.6 5.6 0 0 1 11.2 4.3l.8.8.8-.8a5.6 5.6 0 0 1 7.9 7.9Z"
+            fill="none" stroke="#FCC21E" stroke-width="2.6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 24 24">
+      <path fill="#fff" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1Z"/>
+    </symbol>
+    <symbol id="globe" viewBox="0 0 24 24">
+      <g fill="none" stroke="#fff" stroke-width="1.9">
+        <circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/>
+        <path d="M3 12h18M4.6 7h14.8M4.6 17h14.8"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Seite 1: Vorderseite -->
+<section class="page front">
+  <div class="frame"></div>
+  <img class="abs logo" src="assets/logo.png" alt="Ann's Fußpflege Logo">
+  <div class="abs head">Fußpflege bei Ihnen zuhause!<small>Termin vereinbaren &amp; entspannen</small></div>
+  <img class="abs bow" src="assets/schleife.png" alt="">
+  <div class="abs title">Gutschein</div>
+  <div class="abs badge">
+    <svg viewBox="0 0 100 100" width="100%" height="100%">
+      <path id="scallop-path" fill="#6E0B62"/>
+      <circle cx="50" cy="50" r="37.5" fill="none" stroke="#FCC21E" stroke-width="1.6"/>
+    </svg>
+    <div class="txt"><div class="von">im Wert von</div><div class="wert">5,50&nbsp;€</div></div>
+  </div>
+  <div class="abs script claim">Kleine Auszeit für große Schritte!
+    <svg width="2.8mm" height="2.6mm"><use href="#heart"/></svg></div>
+</section>
+
+<!-- Seite 2: Rückseite -->
+<section class="page back">
+  <div class="frame"></div>
+  <div class="abs hints">
+    <h3>Hinweise zum Gutschein:</h3>
+    <ul>
+      <li>Einlösbar für alle Leistungen von Ann’s Fußpflege.</li>
+      <li>Keine Barauszahlung, nicht mit anderen Aktionen kombinierbar.</li>
+      <li>Ein Gutschein pro Termin.</li>
+      <li>Gültig 3 Jahre ab Ausstellungsdatum.</li>
+      <li>Terminvereinbarung erforderlich.</li>
+    </ul>
+  </div>
+  <div class="abs qrwrap">
+    <div class="qr"><img src="assets/qr-terminbuchung.svg" alt="QR-Code www.anns-fusspflege.de"></div>
+    <div class="qrcap">Termin online buchen</div>
+  </div>
+  <div class="abs fields"><div>Ausgestellt am <span></span></div><div>Nr. <span></span></div></div>
+  <div class="abs rule"></div>
+  <div class="abs contacts">
+    <div class="item"><span class="icon"><svg><use href="#phone"/></svg></span><b>0176 70745932</b></div>
+    <div class="item"><span class="icon"><svg><use href="#globe"/></svg></span>www.anns-fusspflege.de</div>
+  </div>
+</section>
+
+<script>
+  const n = 22, R = 48, r = 44, pts = [];
+  for (let i = 0; i < n * 2; i++) {
+    const a = (Math.PI * i) / n, rad = i % 2 ? r : R;
+    pts.push([50 + rad * Math.cos(a), 50 + rad * Math.sin(a)]);
+  }
+  let d = `M${pts[0][0]},${pts[0][1]}`;
+  for (let i = 1; i <= pts.length; i += 2) {
+    const c = pts[i % pts.length], e = pts[(i + 1) % pts.length];
+    d += ` Q${c[0]},${c[1]} ${e[0]},${e[1]}`;
+  }
+  document.getElementById('scallop-path').setAttribute('d', d + 'Z');
+</script>
+</body>
+</html>
