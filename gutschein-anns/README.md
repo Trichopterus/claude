@@ -11,6 +11,7 @@ Druckfertiger Geschenkgutschein (Vorder- und Rückseite) im Querformat für
 
 ## Druckdaten (`druckdaten/`)
 
+- `gutschein-a6-vorderseite.pdf`, `gutschein-a6-rueckseite.pdf` – dieselben Seiten einzeln (für getrennten Upload)
 - `gutschein-a6.pdf` – **zum Hochladen bei Vistaprint**: Seite 1 = Vorderseite, Seite 2 = Rückseite (Vektor, Schriften eingebettet)
 - `gutschein-a6-vorderseite.png`, `gutschein-a6-rueckseite.png` – dieselben Seiten als PNG mit 300 dpi (Alternative für den Upload bzw. Vorschau)
 
